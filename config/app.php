@@ -178,10 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-		/*
-		 * Application Service Providers...
-		 */
-		crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
+        /*
+         * Application Service Providers...
+         */
+        crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
 
     ],
 
