@@ -22,6 +22,7 @@ class AddNewFieldsToUsersTable extends Migration
         	DB::statement('ALTER TABLE cms_users ADD work_start_year YEAR(4);');
         	$table->string('current_company')->nullable();
         	$table->string('user_personal_message', 500)->nullable();
+        	DB::statement('ALTER TABLE `cms_users` ADD UNIQUE (`email`);');
         });
     }
 
@@ -33,7 +34,14 @@ class AddNewFieldsToUsersTable extends Migration
     public function down()
     {
         Schema::table('cms_users', function (Blueprint $table) {
-            //
+            $table->dropColumn('surname');
+            $table->dropColumn('birthdate');
+            $table->dropColumn('country');
+            $table->dropColumn('city');
+            $table->dropColumn('work_start_year');
+            $table->dropColumn('current_company');
+            $table->dropColumn('user_personal_message');
+            DB::statement('ALTER TABLE cms_users DROP INDEX email');
         });
     }
 }
