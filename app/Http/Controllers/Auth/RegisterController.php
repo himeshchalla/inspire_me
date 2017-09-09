@@ -6,10 +6,6 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Http\Request;
-use Illuminate\Auth\Events\Registered;
-use \DateTime;
-use \DateInterval;
 
 class RegisterController extends Controller
 {
@@ -51,29 +47,11 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        $min_adult_birthdate_obj = new \DateTime();
-        $min_adult_birthdate_obj->sub(new DateInterval('P18Y'));
-        $min_adult_birthdate = $min_adult_birthdate_obj->format('Y-m-d H:i:s');
-        $current_date = new \DateTime();
-        $current_year = date('Y');
-        $validation_rules = [
-            'name'              => 'required|string|max:255',
-            'surname'           => 'required|string|max:255',
-            'email'             => 'required|string|email|max:255|unique:cms_users,email',
-            'password'          => 'required|string|min:6|confirmed',
-            'photo'             => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:10000',
-            'work_start_year'   => 'nullable|numeric|min:1900|max:'.$current_year,
-            'birthdate'         => 'nullable|date|before_or_equal:$min_adult_birthdate',
-            'country'           => 'nullable|alpha',
-            'city'              => 'nullable|alpha',
-            'current_company'   => 'nullable|string',
-            'user_personal_message' => 'nullable|alpha_num|max:500',
-        ];
-//         $validation_messages = [
-//             'before_or_equal'         => 'You must be adult and have age more than 18 years',
-//             'work_start_year'   => 'Year must be between 1900 and '.$current_year,
-//         ];
-        return Validator::make($data, $validation_rules);
+        return Validator::make($data, [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
     }
 
     /**
@@ -82,48 +60,12 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data, Request $request = null)
+    protected function create(array $data)
     {
-        $new_user = User::create([
-            'name'                  => $data['name'],
-            'surname'               => $data['surname'],
-            'email'                 => $data['email'],
-            'password'              => bcrypt($data['password']),
-//            'photo'                 => $file_store_path,
-            'work_start_year'       => $data['work_start_year'],
-            'birthdate'             => $data['birthdate'],
-            'country'               => $data['country'],
-            'city'                  => $data['city'],
-            'current_company'       => $data['current_company'],
-            'user_personal_message' => $data['user_personal_message'],
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password']),
         ]);
-
-        if($new_user->id > 0) {
-            $file_store_path = null;
-            if ($request->hasFile('photo') && $request->file('photo')->isValid()) {
-                $file_store_path = $request->photo->store('uploads/'.$new_user->id);
-                $new_user_update_status = $new_user->update(['photo' => $file_store_path,]);
-            }
-        }
-        
-        return $new_user;
-    }
-    
-    /**
-     * Handle a registration request for the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function register(Request $request)
-    {
-        $this->validator($request->all())->validate();
-    
-        event(new Registered($user = $this->create($request->all(), $request)));
-    
-        $this->guard()->login($user);
-    
-        return $this->registered($request, $user)
-        ?: redirect($this->redirectPath());
     }
 }
