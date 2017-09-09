@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'InspireMe') }}</title>
+        <title>{{ config('app.name', 'InsprMe') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -79,16 +79,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <div>{{ config('app.name', 'InspireMe') }}</div>
+                    <div>{{ config('app.name', 'InsprMe') }}</div>
                 </div>
 
                 <div class="links m-b-md">
                     <a href="/">New People. New Inspiration</a>
-                </div>
-
-                <div class="m-b-md">
-                    <div>A perfect solution for all singles who are ready to mingle!!</div>
-                    <div>The perfect place to catch your match.</div>
                 </div>
             </div>
         </div>
