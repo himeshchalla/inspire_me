@@ -11,17 +11,17 @@ class InspiremePrivileges extends Seeder
      */
     public function run()
     {
-        $this->command->info('Please wait updating the data...');
+        $this->command->info('Please wait updating user privileges and dummy users data...');
         
-        $this->call('Cms_privilegesSeeder');
-        $this->call('Cms_privileges_rolesSeeder');
-        $this->call('Cms_usersSeeder');
+        $this->call('CmsprivilegesSeeder');
+        $this->call('CmsPrivilegesRolesSeeder');
+        $this->call('CmsUsersSeeder');
         
-        $this->command->info('Updating the data completed !');
+        $this->command->info('Updating user privileges and dummy users data completed !');
     }
 }
 
-class Cms_privilegesSeeder extends Seeder {
+class CmsprivilegesSeeder extends Seeder {
 
     public function run()
     {
@@ -74,7 +74,7 @@ class Cms_privilegesSeeder extends Seeder {
     }
 }
 
-class Cms_privileges_rolesSeeder extends Seeder {
+class CmsPrivilegesRolesSeeder extends Seeder {
 
     public function run()
     {
@@ -133,7 +133,7 @@ class Cms_privileges_rolesSeeder extends Seeder {
     }
 }
 
-class Cms_usersSeeder extends Seeder {
+class CmsUsersSeeder extends Seeder {
 
     public function run()
     {
