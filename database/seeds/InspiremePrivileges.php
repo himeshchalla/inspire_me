@@ -144,7 +144,7 @@ class CmsUsersSeeder extends Seeder {
             'name'              => 'Himesh',
             'surname'           => 'Challa',
             'photo'             => NULL,
-            'email'             => 'himesh@inspireme.com',
+            'email'             => 'himesh@insprme.co',
             'password'          => $password,
             'birthdate'         => '1980-08-20 00:00:00',
             'country'           => 'India',
@@ -161,7 +161,7 @@ class CmsUsersSeeder extends Seeder {
             'name'              => 'Nilesh',
             'surname'           => 'Dave',
             'photo'             => NULL,
-            'email'             => 'nilesh@inspireme.com',
+            'email'             => 'nilesh@insprme.co',
             'password'          => $password,
             'birthdate'         => '1990-06-12 00:00:00',
             'country'           => 'India',
@@ -175,9 +175,9 @@ class CmsUsersSeeder extends Seeder {
             'user_personal_message' => 'message321',
         ));
         
-        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@inspireme.com']);
-        DB::table('cms_email_templates')->where('from_email', 'system@crudbooster.com')->update(['from_email' => 'system@inspireme.com']);
-        DB::table('cms_settings')->where('name', 'email_sender')->update(['content' => 'support@inspireme.com']);
-        DB::table('cms_settings')->where('name', 'appname')->update(['content' => 'InspireMe']);
+        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@insprme.co']);
+        DB::table('cms_email_templates')->where('from_email', 'system@crudbooster.com')->update(['from_email' => 'system@insprme.co']);
+        DB::table('cms_settings')->where('name', 'email_sender')->update(['content' => 'support@insprme.co']);
+        DB::table('cms_settings')->where('name', 'appname')->update(['content' => 'InsprMe']);
     }
 }
