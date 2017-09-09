@@ -10,12 +10,29 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'cms_users';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'surname',
+        'email', 
+        'password',
+        'photo',
+        'work_start_year',
+        'birthdate',
+        'country',
+        'city',
+        'current_company',
+        'user_personal_message',
     ];
 
     /**

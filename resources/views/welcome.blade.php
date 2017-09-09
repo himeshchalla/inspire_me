@@ -79,15 +79,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <div>{{ config('app.name', 'InspireMe') }}</div>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="links m-b-md">
+                    <a href="/">New People. New Inspiration</a>
+                </div>
+
+                <div class="m-b-md">
+                    <div>A perfect solution for all singles who are ready to mingle!!</div>
+                    <div>The perfect place to catch your match.</div>
                 </div>
             </div>
         </div>
