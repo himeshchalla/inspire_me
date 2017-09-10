@@ -85,6 +85,10 @@
                 <div class="links m-b-md">
                     <a href="/">New People. New Inspiration</a>
                 </div>
+                <div class="m-b-md">
+                    <div>Connecting open-minded people in your city to share professional experiences.</div>
+                    <div>Broaden your professional horizon by talking to people outside your circle</div>
+                </div>
             </div>
         </div>
     </body>
