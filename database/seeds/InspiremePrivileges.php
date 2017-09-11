@@ -25,7 +25,7 @@ class CmsprivilegesSeeder extends Seeder {
 
     public function run()
     {
-
+        $this->command->info('Creating user roles for the system...');
         if(DB::table('cms_privileges')->where('name','Admin')->count() == 0) {
             DB::table('cms_privileges')->insert([
                 'name'          =>'Admin',
@@ -71,6 +71,7 @@ class CmsprivilegesSeeder extends Seeder {
                 'updated_at' => NULL
             ]);
         }
+        $this->command->info('Done!!!');
     }
 }
 
@@ -78,6 +79,7 @@ class CmsPrivilegesRolesSeeder extends Seeder {
 
     public function run()
     {
+        $this->command->info('Creating user role permissions for the system...');
         $modules = DB::table('cms_moduls')->get();
         $i = 1;
         $roles = DB::table('cms_privileges')->select('id', 'name')->get();
@@ -130,6 +132,7 @@ class CmsPrivilegesRolesSeeder extends Seeder {
                 }
             }
         }
+        $this->command->info('Done!!!');
     }
 }
 
@@ -137,6 +140,7 @@ class CmsUsersSeeder extends Seeder {
 
     public function run()
     {
+        $this->command->info('Creating dummy users for the system...');
         $password = \Hash::make('123456');
         $admin_role_id = DB::table('cms_privileges')->select('id')->where('name', '=', 'Admin')->get();
         $cms_users = DB::table('cms_users')->insert(array(
@@ -174,10 +178,12 @@ class CmsUsersSeeder extends Seeder {
             'current_company'   => 'This company',
             'user_personal_message' => 'message321',
         ));
-        
-        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@insprme.co']);
-        DB::table('cms_email_templates')->where('from_email', 'system@crudbooster.com')->update(['from_email' => 'system@insprme.co']);
-        DB::table('cms_settings')->where('name', 'email_sender')->update(['content' => 'support@insprme.co']);
+        $this->command->info('Done!!!');
+        $this->command->info('Setting up inspireme system email addresses...');
+        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@inspireme.com']);
+        DB::table('cms_email_templates')->where('from_email', 'system@crudbooster.com')->update(['from_email' => 'system@inspireme.com']);
+        DB::table('cms_settings')->where('name', 'email_sender')->update(['content' => 'support@inspireme.com']);
         DB::table('cms_settings')->where('name', 'appname')->update(['content' => 'InsprMe']);
+        $this->command->info('Done!!!');
     }
 }
