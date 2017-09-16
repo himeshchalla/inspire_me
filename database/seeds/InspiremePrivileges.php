@@ -180,7 +180,7 @@ class CmsUsersSeeder extends Seeder {
         ));
         $this->command->info('Done!!!');
         $this->command->info('Setting up inspireme system email addresses...');
-        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@insprme.com']);
+        DB::table('cms_users')->where('email', 'admin@crudbooster.com')->update(['email' => 'admin@inspireme.com']);
         DB::table('cms_email_templates')->where('from_email', 'system@crudbooster.com')->update(['from_email' => 'system@insprme.com']);
         DB::table('cms_settings')->where('name', 'email_sender')->update(['content' => 'support@insprme.com']);
         DB::table('cms_settings')->where('name', 'appname')->update(['content' => 'InsprMe']);
