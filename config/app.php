@@ -182,7 +182,11 @@ return [
          * Application Service Providers...
          */
         crocodicstudio\crudbooster\CRUDBoosterServiceProvider::class,
-
+        
+        /*
+         * Laracogs Application Service Providers...
+         */
+        Yab\Laracogs\LaracogsProvider::class,
     ],
 
     /*
