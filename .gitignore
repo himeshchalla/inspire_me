@@ -15,3 +15,4 @@ yarn-error.log
 .gitattributes
 .settings
 /public/vendor/crudbooster
+package-lock.json
