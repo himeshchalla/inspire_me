@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use DB;
+use Validator;
+use App\Services\UserService;
+use App\Models\User;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
@@ -27,7 +29,7 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
+     * Where to redirect users after login / registration.
      *
      * @var string
      */
@@ -38,9 +40,10 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(UserService $userService)
     {
         $this->middleware('guest');
+        $this->service = $userService;
     }
 
     /**
@@ -80,7 +83,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return User
      */
     protected function create(array $data, Request $request = null)
     {
@@ -97,7 +100,7 @@ class RegisterController extends Controller
             'current_company'       => $data['current_company'],
             'user_personal_message' => $data['user_personal_message'],
         ]);
-
+        
         if($new_user->id > 0) {
             $file_store_path = null;
             if ($request->hasFile('photo') && $request->file('photo')->isValid()) {
@@ -106,6 +109,9 @@ class RegisterController extends Controller
             }
         }
         
+        DB::transaction(function() use ($data, $new_user) {
+            return $this->service->create($new_user, $data['password']);
+        });
         return $new_user;
     }
     
@@ -121,9 +127,11 @@ class RegisterController extends Controller
     
         event(new Registered($user = $this->create($request->all(), $request)));
     
-        $this->guard()->login($user);
-    
-        return $this->registered($request, $user)
-        ?: redirect($this->redirectPath());
+        //$this->guard()->login($user);
+
+//         return $this->registered($request, $user)
+//         ?: redirect($this->redirectPath());
+        
+        return redirect($this->redirectPath());
     }
 }
