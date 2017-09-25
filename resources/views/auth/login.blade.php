@@ -39,8 +39,7 @@
                             <label for="rememberme" >Remember Me</label>
                             <input id="rememberme" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
                             <li class="form-group">
-                                <button value="Login" type="submit">Login<img src="{{ asset('images/send-icon.png') }}"/>
-                                </button>
+                            	<input name="Login" type="submit" value="Login">
                             </li>
                         </ul>
                     </div>
