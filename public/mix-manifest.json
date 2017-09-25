@@ -8,5 +8,7 @@
     "/js/html5.js": "/js/html5.js",
     "/js/=index.js": "/js/=index.js",
     "/css/globle.css": "/css/globle.css",
-    "/css/fonts.css": "/css/fonts.css"
+    "/css/fonts.css": "/css/fonts.css",
+    "/css/jquery-ui.css": "/css/jquery-ui.css",
+    "/css/pikaday.css": "/css/pikaday.css"
 }

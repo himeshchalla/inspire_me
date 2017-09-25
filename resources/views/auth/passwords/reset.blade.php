@@ -39,8 +39,7 @@
                                 </div>
                             </li>
                             <li class="form-group">
-                                <button value="login" type="submit">Reset Password<img src="{{ asset('images/send-icon.png') }}"/>
-                                </button>
+                                <input name="Reset Password" type="submit" value="Reset Password">
                             </li>
                         </ul>
                     </div>

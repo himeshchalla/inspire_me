@@ -24,5 +24,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .styles('resources/assets/css/globle.css', 'public/css/globle.css')
     .styles('resources/assets/css/fonts.css', 'public/css/fonts.css')
-    .styles('resources/assets/css/jquery-ui.css', 'public/css/fonts.css')
-    .styles('resources/assets/css/pikaday.css', 'public/css/fonts.css');
+    .styles('resources/assets/css/jquery-ui.css', 'public/css/jquery-ui.css')
+    .styles('resources/assets/css/pikaday.css', 'public/css/pikaday.css');
