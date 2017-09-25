@@ -14,6 +14,10 @@
                             <li class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                 <strong> 
                                     @include('partials.errors')
+                                </strong>
+                            </li>
+                            <li class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <strong> 
                                     @include('partials.status')
                                 </strong>
                             </li>
@@ -25,8 +29,9 @@
                                 </div>
                             </li>
                             <li class="form-group">
-                                <button value="login" type="submit">Send Reset Password Link<img src="{{ asset('images/send-icon.png') }}"/>
-                                </button>
+                            	<input name="Send Reset Password Link" type="submit" value="Send Reset Password Link" />
+                            </li>
+                            <li class="form-group">
                             </li>
                         </ul>
                     </div>
