@@ -148,7 +148,7 @@ class CmsUsersSeeder extends Seeder {
             'name'              => 'Himesh',
             'surname'           => 'Challa',
             'photo'             => NULL,
-            'email'             => 'himesh@insprme.com',
+            'email'             => 'himeshchalla@gmail.com',
             'password'          => $password,
             'birthdate'         => '1980-08-20 00:00:00',
             'country'           => 'India',
@@ -165,7 +165,7 @@ class CmsUsersSeeder extends Seeder {
             'name'              => 'Nilesh',
             'surname'           => 'Dave',
             'photo'             => NULL,
-            'email'             => 'nilesh@insprme.com',
+            'email'             => 'davenilesh@live.com',
             'password'          => $password,
             'birthdate'         => '1990-06-12 00:00:00',
             'country'           => 'India',
@@ -177,6 +177,23 @@ class CmsUsersSeeder extends Seeder {
             'work_start_year'   => 2017,
             'current_company'   => 'This company',
             'user_personal_message' => 'message321',
+        ));
+        $cms_users = DB::table('cms_users')->insert(array(
+            'name'              => 'Roald',
+            'surname'           => 'Verheijdt',
+            'photo'             => 'uploads/1/2017-09/afb001kl_400x400.jpg',
+            'email'             => 'roald@verheijdt.nl',
+            'password'          => '$2y$10$QSijVZziVyV3BvQO9DvH8eZtduGn7wmFhKkXG5Tu.T7LQQ8WciBVu',
+            'birthdate'         => '1976-07-13 00:00:00',
+            'country'           => 'The Netherlands',
+            'city'              => 'Den Haag',
+            'id_cms_privileges' => $admin_role_id[0]->id,
+            'created_at'        => date('Y-m-d H:i:s'),
+            'updated_at'        => NULL,
+            'status'            => 'Active',
+            'work_start_year'   => 2003,
+            'current_company'   => 'NS',
+            'user_personal_message' => 'Check me out',
         ));
         $this->command->info('Done!!!');
         $this->command->info('Setting up inspireme system email addresses...');
