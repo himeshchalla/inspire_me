@@ -20,34 +20,29 @@
         <div class="our-service-box">
         	<ul>
             	<li>
-                	<div class="service-icon"><img src="{{ asset('images/service-icon1.png') }}"/></div>
+                	<div class="service-icon"><img src="images/service-icon1.png"/></div>
                     <h3>Get an invite</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <div class="read-more"><a href="#">Read More<i class="fa fa-long-arrow-right">&#xf178;</i></a></div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>                    
                 </li>
                 <li>
-                	<div class="service-icon"><img src="{{ asset('images/service-icon2.png') }}"/></div>
+                	<div class="service-icon"><img src="images/service-icon2.png"/></div>
                     <h3>Create a profile</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <div class="read-more"><a href="#">Read More<i class="fa fa-long-arrow-right">&#xf178;</i></a></div>
                 </li>
                 <li>
-                	<div class="service-icon"><img src="{{ asset('images/service-icon3.png') }}"/></div>
+                	<div class="service-icon"><img src="images/service-icon3.png"/></div>
                     <h3>Get in touch</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <div class="read-more"><a href="#">Read More<i class="fa fa-long-arrow-right">&#xf178;</i></a></div>
                 </li>
                 <li>
-                	<div class="service-icon"><img src="{{ asset('images/service-icon4.png') }}"/></div>
+                	<div class="service-icon"><img src="images/service-icon4.png"/></div>
                     <h3>Share a coffee</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <div class="read-more"><a href="#">Read More<i class="fa fa-long-arrow-right">&#xf178;</i></a></div>
                 </li>
                 <li>
-                	<div class="service-icon"><img src="{{ asset('images/service-icon5.png') }}"/></div>
+                	<div class="service-icon"><img src="images/service-icon5.png"/></div>
                     <h3>Get inspired</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <div class="read-more"><a href="#">Read More<i class="fa fa-long-arrow-right">&#xf178;</i></a></div>
                 </li>
             </ul>
         </div>

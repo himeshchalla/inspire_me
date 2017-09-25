@@ -17,7 +17,7 @@
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet" type="text/css">
     
     <!--[if lt IE 9]>
-    <script src="{{ asset('js/html5.js') }}"></script>
+    <script src="js/html5.js"></script>
     <![endif]-->
     </head>
     
