@@ -41,6 +41,7 @@ class InterestsSeeder extends Seeder {
                 'deleted_at' =>NULL,
             ]);
         }
+        
         $this->command->info('Done!!!');
 
         $this->command->info('Setting up menu permission of Interest module for admin panel...');
@@ -96,6 +97,42 @@ class InterestsSeeder extends Seeder {
                 }
             }
         }
+        $himesh_user_id = DB::table('cms_users')->select('id')->where('name', '=', 'Himesh')->get();
+        $nilesh_user_id = DB::table('cms_users')->select('id')->where('name', '=', 'Nilesh')->get();
+        $interests = DB::table('interests')->insert(array(
+            [
+                'interest_name' => 'Music',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'interest_name' =>'Programming',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'interest_name' => 'Travelling',
+                'color'         => NULL,
+                'created_by'    => $nilesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'interest_name' => 'Trekking',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+        ));
         $this->command->info('Done!!!');
         $this->command->info('Completed Interests module setup successfully!!!');
     }
@@ -178,6 +215,82 @@ class SkillsSeeder extends Seeder {
                 }
             }
         }
+        $himesh_user_id = DB::table('cms_users')->select('id')->where('name', '=', 'Himesh')->get();
+        $nilesh_user_id = DB::table('cms_users')->select('id')->where('name', '=', 'Nilesh')->get();
+        $interests = DB::table('skills')->insert(array(
+            [
+                'skill_name'    => 'Software Programming',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    =>'Driving',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Mathematical',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Flirting',
+                'color'         => NULL,
+                'created_by'    => $nilesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Blamming',
+                'color'         => NULL,
+                'created_by'    => $nilesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Bossy',
+                'color'         => NULL,
+                'created_by'    => $nilesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Politics',
+                'color'         => NULL,
+                'created_by'    => $nilesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Analytics',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+            [
+                'skill_name'    => 'Web development',
+                'color'         => NULL,
+                'created_by'    => $himesh_user_id[0]->id,
+                'updated_by'    => NULL,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'updated_at'    => NULL
+            ],
+        ));
         $this->command->info('Done!!!');
         $this->command->info('Completed Interests module setup successfully!!!');
     }
