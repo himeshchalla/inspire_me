@@ -5,18 +5,26 @@
       <tab-content title="User details"
                    icon="ti-user">
         My first tab content
+        <br />
+        firstname, email, password, confirm password
       </tab-content>
       <tab-content title="Basic Profile"
                    icon="ti-settings">
-        My second tab content
+        Basic Profile tab content here
+        <br />
+        basic profile
       </tab-content>
       <tab-content title="Skills"
                    icon="ti-settings">
-        My second tab content
+        Skills tab content here
+        <br />
+        Skills
       </tab-content>
       <tab-content title="Interests"
                    icon="ti-settings">
-        My second tab content
+        Interests tab content here
+        <br />
+        Interests
       </tab-content>
       <tab-content title="Confirmation"
                    icon="ti-check">
