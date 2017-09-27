@@ -1,7 +1,6 @@
 <template>
-
-  <form-wizard id="register1" @on-complete="onComplete" 
-                        shape="square"
+  <form-wizard @on-complete="onComplete" 
+                        shape="tab"
                         color="#00a1ff" title="Signup form/Register form" subtitle="Welcome to InsprMe">
       <tab-content title="User details"
                    icon="ti-user">
@@ -31,7 +30,7 @@
                    icon="ti-check">
         Yuhuuu! This seems pretty damn simple
       </tab-content>
-  </form-wizard>
+   </form-wizard>
 </template>
 <style>
 span.error{
@@ -57,6 +56,6 @@ import 'vue-form-wizard/dist/vue-form-wizard.min.css';
       onComplete: function(){
           alert('Yay. Done!');
        }
-      },
+      }
   }
 </script>

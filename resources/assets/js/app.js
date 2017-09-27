@@ -16,7 +16,10 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
-Vue.component('register', require('./components/Register.vue'));
+Vue.component('register1', require('./components/Register.vue'));
+Vue.component('register2', require('./components/Register2.vue'));
+Vue.component('register3', require('./components/Register3.vue'));
+Vue.component('register4', require('./components/Register4.vue'));
 
 //const app = new Vue({
 //    el: '#app'
