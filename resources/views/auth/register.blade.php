@@ -1,39 +1,52 @@
 @extends('layouts.insprme')
 
 @section('content')
-<register></register>
-<!-- <template> -->
-<!--   <form-wizard @on-complete="onComplete" shape="square" color="#3498db"> -->
-<!--       <tab-content title="User details" icon="ti-user"> -->
-<!--         My first tab content -->
-<!--       </tab-content> -->
-<!--       <tab-content title="Basic Profile" icon="ti-settings"> -->
-<!--         My second tab content -->
-<!--       </tab-content> -->
-<!--       <tab-content title="Skills" icon="ti-settings"> -->
-<!--         My second tab content -->
-<!--       </tab-content> -->
-<!--       <tab-content title="Interests" icon="ti-settings"> -->
-<!--         My second tab content -->
-<!--       </tab-content> -->
-<!--       <tab-content title="Confirmation" icon="ti-check"> -->
-<!--         Yuhuuu! This seems pretty damn simple -->
-<!--       </tab-content> -->
-<!--   </form-wizard> -->
-
-<!-- </template> -->
-<!-- <form-wizard> -->
-<!--   <tab-content title="Personal details"> -->
-<!--     My first tab content -->
-<!--   </tab-content> -->
-<!--   <tab-content title="Additional Info"> -->
-<!--       My second tab content -->
-<!--    </tab-content> -->
-<!--    <tab-content title="Last step"> -->
-<!--      Yuhuuu! This seems pretty damn simple -->
-<!--    </tab-content> -->
-<!-- </form-wizard> -->
-
+<template>
+  <form-wizard id="register1" @on-complete="onComplete" 
+                        shape="square"
+                        color="#00a1ff" title="Signup form/Register form" subtitle="Welcome to InsprMe">
+      <tab-content title="User details" icon="ti-user">
+        <!---- Section Start ----->
+		@include('auth.userdetails')
+        <!---- Section End ----->
+      </tab-content>
+      <tab-content title="Profile" icon="ti-settings">
+        <!---- Section Start ----->
+		@include('auth.basicprofile')
+        <!---- Section End ----->
+      </tab-content>
+      <tab-content title="Skills" icon="ti-settings">
+        <!---- Section Start ----->
+		@include('auth.skills')
+        <!---- Section End ----->
+      </tab-content>
+      <tab-content title="Interests" icon="ti-settings">
+        <!---- Section Start ----->
+		@include('auth.interests')
+        <!---- Section End ----->
+      </tab-content>
+      <tab-content title="Confirmation" icon="ti-check">
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+        Final Confirmation and user terms and conditions approval from this final step content here
+        <br />
+      </tab-content>
+  </form-wizard>
+</template>
+<hr></hr>
+<register1></register1>
+<hr></hr>
+<register2></register2>
+<hr></hr>
+<register3></register3>
 <!-- <div class="container"> -->
 <!--     <div class="row"> -->
 <!--         <div class="col-md-8 col-md-offset-2"> -->
