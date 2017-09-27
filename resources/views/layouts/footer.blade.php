@@ -4,3 +4,5 @@
         <div class="copyright">Copyright © @copyright_year() <a href="#">{{ config('app.name', 'insprme.com') }}</a>. All Rights Reserved</div>
     </div>
 </footer>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
