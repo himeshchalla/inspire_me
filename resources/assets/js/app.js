@@ -16,15 +16,26 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
-Vue.component('register1', require('./components/Register.vue'));
+Vue.component('register', require('./components/Register.vue'));
 Vue.component('register2', require('./components/Register2.vue'));
 Vue.component('register3', require('./components/Register3.vue'));
 Vue.component('register4', require('./components/Register4.vue'));
 
 //const app = new Vue({
-//    el: '#app'
+//    el: '#sitemain'
 //});
 
-const app = new Vue({
-    el: '#sitemain'
-});
+
+window.onload = function () {
+	const app = new Vue({
+        el: '#register_user',
+        data: {
+        	message: 'home'
+        },
+        methods: {
+            onComplete: function(){
+            alert('Yay. Done!');
+         }
+        },
+    });
+}
