@@ -17,10 +17,7 @@
         <!---- Section End ----->
       </tab-content>
       <tab-content title="Skills" icon="ti-thumb-up">
-<!-- ti-star -->
-<!-- ti-shine -->
-<!-- ti-settings -->
-<!-- ti-id-badge -->
+        <!-- These icons can also considered for skills ti-star, ti-shine, ti-settings, ti-id-badge -->
         <!---- Section Start ----->
 		@include('auth.skills')
         <!---- Section End ----->
