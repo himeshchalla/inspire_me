@@ -27,5 +27,6 @@ mix.js('resources/assets/js/html5.js', 'public/js/html5.js')
     .styles('resources/assets/css/fonts.css', 'public/css/fonts.css')
     .styles('resources/assets/css/jquery-ui.css', 'public/css/jquery-ui.css')
     .styles('resources/assets/css/pikaday.css', 'public/css/pikaday.css')
-    .styles('resources/assets/css/vue-form-wizard.min.css', 'public/css/vue-form-wizard.min.css')
-    .styles('resources/assets/css/themify-icons.css', 'public/css/themify-icons.css');
+    .styles('resources/assets/css/responsive.css', 'public/css/responsive.css')
+    .styles('resources/assets/css/themify-icons.css', 'public/css/themify-icons.css')
+    .styles('resources/assets/css/vue-form-wizard.min.css', 'public/css/vue-form-wizard.min.css');

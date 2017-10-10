@@ -1,0 +1,199 @@
+@media screen and (max-width:1166px) {
+.container{ max-width:1024px;}
+
+.nav a{padding:0px 8px 8px 8px;}
+.nav a:hover, .nav a.act {padding:0px 8px 8px 8px;}
+.nav a:hover, .nav .test a.act {padding:0px 8px 8px 8px;}
+
+
+/* Home Page */
+section .our-service-box ul li{ max-width:194px; margin:0px 5px;}
+section .our-service-box ul li h3{ font-size:16px;}
+
+.members-main .member-list ul li{ max-width:192px;}
+
+/* Views */
+.views-list ul li .user-bio{ width:80%;}
+}
+
+@media screen and (max-width:1024px) {
+.container{ max-width:980px;}
+
+.nav a{ font-size:13px; padding:0px 8px 8px 8px;}
+.nav a:hover, .nav a.act {padding:0px 8px 8px 8px;}
+.nav a:hover, .nav .test a.act {padding:0px 8px 8px 8px;}
+
+/* Home Page */
+section h1{ font-size:22px;}
+section .our-service-box ul{ display:table-cell; text-align:center; vertical-align:middle;}
+section .our-service-box ul li{ max-width:250px; float:none; display:inline-block; margin:0px 8px 12px 8px;}
+
+.members-main .member-list ul li{ max-width:184px;}
+}
+
+@media screen and (max-width:980px) {
+.container{ max-width:730px;}
+
+/* Home Page */
+header{ height:auto; padding:0px 0px 10px 0px;}
+section .our-service-box ul li{ max-width:230px; margin:0px 5px 12px 5px;}
+
+.navigation{ width:100%; display:inline-block; text-align:left; vertical-align:middle; margin:0px; position:relative;}
+.toggleMenu { top:-40px; position:absolute; float:right; right:0px;}
+.active { display: block;}
+.nav{ width:100%; float:left; background-image:none; margin-top:0px; /*margin-top:50px;*/ text-align:left;}
+.nav > li { float: none; }
+.nav a { background-image:none; font-size:14px; line-height:32px; padding:0px 10px; margin:0px;}
+.nav li{ background:none; border-bottom:1px solid #e4e4e4;}
+.nav > li > .parent{ /*background-image:url(../images/downArrow.png); background-repeat: no-repeat; background-position:98%;*/}
+.nav > li:hover > .parent { /*background-image:url(../images/downArrow.png); background-repeat: no-repeat; background-position:98%;*/}
+.nav ul { display: block; width: 100%; }
+.nav > li.hover > ul, .nav li li.hover ul { position: static; border-radius:0px;}
+.nav a:hover, .nav a.act { background-image:none; padding:0px 10px;}
+.nav > li:hover > .parent { border-radius:0px; background-position:98%; }
+.nav li:hover > a, .nav ul ul :hover > a { color:#00a1ff; border-radius:0px;}
+.nav li ul { padding-top:0px; }
+.nav li li { margin-right:0px; }
+.nav li li a { background:#fff; border-top:0px solid #7f7f7f; color:#858584; border-bottom:0px solid #7f7f7f; }
+.nav li li a:hover { color:#b69c4d;}
+
+.members-main .member-list ul li{ max-width:170px;}
+
+/* Profile Member */
+.profile-page .member-detail{ max-width:436px;}
+}
+
+@media screen and (max-width:767px) {
+.container{ max-width:640px;}
+
+/* Home Page */
+.banner-main{margin:0px 0px 40px 0px;}
+
+section h1{ font-size:20px;}
+section h6{ font-size:16px;}
+
+section .our-service-box ul li{ max-width:200px; margin:0px 5px 12px 5px;}
+
+.members-main .member-list ul li{ max-width:148px;}
+
+/* Profile Member */
+.profile-page{ max-width:100%;}
+.profile-page .profile-member{ width:190px;}
+.profile-page .member-detail{ max-width:378px;}
+
+/* Chat */
+.chat-main .chat-list{ height:270px;}
+
+/* Views */
+.views-list ul li .user-bio{ width:70%;}
+}
+
+@media screen and (max-width:599px) {
+.container{ max-width:460px;}
+
+/* Home Page */
+section h6{ font-size:14px;}
+
+section .our-service-box ul li{ max-width:218px; margin:0px 5px 12px 5px;}
+
+footer{ min-height:inherit; padding:6px 0px;}
+footer .contact-email{ width:100%; text-align:center; margin:0px;}
+footer .contact-email a{ line-height:22px;}
+footer .copyright{ width:100%; text-align:center; line-height:22px; margin:0px;}
+
+/* Login Page */
+.login-center{ max-width:100%; float:left;}
+.login-form{padding:14px;}
+.login-form ul li{ margin-bottom:14px;}
+.login-form ul li label{ width:100%; max-width:100%; line-height:22px;}
+.login-form ul li .form-fild input[type="email"], .login-form ul li .form-fild input[type="text"], .login-form ul li .form-fild input[type="password"]{ width:82%;}
+
+/* Sign Page */
+.signup-center{ max-width:100%; float:left;}
+.signup-form{ padding:14px;}
+.signup-form ul li label{ line-height:22px;}
+.signup-form ul li .form-fild input[type="email"], .signup-form ul li .form-fild input[type="text"], .signup-form ul li .form-fild input[type="password"]{ width:82%;}
+
+/* Profile Basic Page */
+.profile-form{ padding:14px;}
+.profile-form ul li label{ line-height:22px;}
+
+.members-main .member-list ul li{ max-width:141px;}
+.members-main .member-list ul li h3{ font-size:13px; min-height:38px;}
+.members-main .member-list ul li .members-bio{ font-size:11px; line-height:16px;}
+
+/* Profile Member */
+.profile-page .profile-member{ width:160px;}
+.profile-page .member-detail{ max-width:230px; margin:20px 0px 0px 16px;}
+.profile-page .member-detail h3{ font-size:16px;}
+.profile-page .member-detail .member-profession{ font-size:13px; line-height:18px;}
+.profile-page .member-other-information .information-member ul li{ max-width:197px;}
+
+.ui-button {	
+	height:34px;
+	line-height:34px !important;
+}
+
+/* View */
+.views-list ul li .user-bio{ width:60%;}
+.views-list ul li .user-clock{ width:10%;}
+}
+
+@media screen and (max-width:479px) {
+.container{ max-width:300px;}
+
+/* Home Page */
+header .logo{ width:100%; text-align:center; margin:10px 0px 0px 0px;}
+header .logo img{ max-width:200px;}
+
+header .logo-home{ width:100%; text-align:center; margin:10px 0px 0px 0px;}
+header .logo-home img{ max-width:160px; display:inline-block;}
+
+.toggleMenu{ position:relative; top:4px;}
+
+header nav{ width:100%; margin:10px 0px 0px 0px; padding-bottom:10px;}
+header nav ul{ display:table-cell; text-align:center; vertical-align:middle;}
+header nav ul li{ float:none; display:inline-block;}
+
+.banner-main{margin:0px 0px 30px 0px;}
+
+section h1{ font-size:18px;}
+section .our-service-box ul li{ max-width:100%; margin:0px 0px 12px 0px;}
+
+/* Login Page */
+.login-form{padding:10px;}
+
+/* Sign Page */
+.signup-form{ padding:10px;}
+
+/* Profile Page */
+.profile-form{ padding:10px;}
+
+/* Profile Interests Page */
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a.ui-button:link, a.ui-button:visited, .ui-button{ width:100% !important; line-height:30px !important;}
+
+
+.members-main .members-table ul li{ margin:0px 4px;}
+.members-main .member-list ul { display:table-cell; text-align:center; vertical-align:middle;}
+.members-main .member-list ul li{ max-width:222px; float:none; display:inline-block; margin:0px 0px 18px 0px;}
+.members-main .member-list ul li h3{ font-size:13px; min-height:inherit;}
+.members-main .member-list ul li .members-bio{ font-size:11px; line-height:16px;}
+
+/* Profile Member */
+.profile-page .profile-main{padding:12px;}
+.profile-page .profile-member{ width:100%;}
+.profile-page .member-detail{ max-width:100%; margin:20px 0px 0px 0px;}
+.profile-page .member-detail h3{ font-size:16px;}
+.profile-page .member-detail .member-profession{ font-size:13px; line-height:18px;}
+.profile-page .member-other-information .information-member ul li{ max-width:100%; margin:0px 0px 6px 0px;}
+
+/* Chat */
+.chat-main .chat-list ul li .chat-detail{ font-size:12px;}
+
+/* View */
+.views-list ul li .user-bio{ width:56%; margin-left:10px;}
+.views-list ul li .user-bio h3{ font-size:14px;}
+.views-list ul li .user-bio h6{ font-size:12px;}
+.views-list ul li .user-clock { width:12%;}
+.views-list ul li .user-clock img{ width:100%;}
+}

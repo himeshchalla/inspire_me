@@ -1,11 +1,11 @@
 @extends('layouts.insprme')
 @section('title', $title)
 @section('content')
-<!---- Section Start ----->
 <div class="banner-main"><img src="{{ asset('images/banner-main.jpg') }}"/></div>
+<!---- Section Start ----->
 <section>
 	<div class="container">
-        <h1>Welcome to <span>Inspr me</span>.</h1>
+        <h1>Welcome to <span>Inspr me.</span></h1>
         <div class="welcome-content">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>

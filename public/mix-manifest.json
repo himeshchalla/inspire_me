@@ -12,6 +12,7 @@
     "/css/fonts.css": "/css/fonts.css",
     "/css/jquery-ui.css": "/css/jquery-ui.css",
     "/css/pikaday.css": "/css/pikaday.css",
-    "/css/vue-form-wizard.min.css": "/css/vue-form-wizard.min.css",
-    "/css/themify-icons.css": "/css/themify-icons.css"
+    "/css/responsive.css": "/css/responsive.css",
+    "/css/themify-icons.css": "/css/themify-icons.css",
+    "/css/vue-form-wizard.min.css": "/css/vue-form-wizard.min.css"
 }

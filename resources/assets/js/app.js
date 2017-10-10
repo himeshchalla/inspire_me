@@ -35,7 +35,16 @@ window.onload = function () {
         methods: {
             onComplete: function(){
             alert('Yay. Done!');
-         }
+         },
+            changetab: function(prevIndex, nextIndex){
+             alert('Tab changed called!');
+             alert("prevIndex:"+(prevIndex));
+             alert("nextIndex:"+(nextIndex));
+//             console.log(this.$emit('prevTab'));
+//             this.$emit('prevTab');
+             console.log(this.props);
+             //this.$emit('on-change', activeTabIndex-1, activeTabIndex+1);
+          }
         },
     });
 }
