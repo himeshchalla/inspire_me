@@ -11,12 +11,10 @@ body {
 	-ms-text-size-adjust: 100%;
 }
 /* Comman Classes */
-a, a:hover, img, span {
+a, a:hover, img, span {	
 	border:0; 
 	outline:none;
-	text-decoration:none; 	
-	margin:0; 
-	padding:0;
+	text-decoration:none; 		
 	transition:all linear 0.3s;
 	-moz-transition:all linear 0.3s;
 	-webkit-transition:all linear 0.3s;
@@ -60,16 +58,21 @@ header{ width:100%; float:left; background:#fff; height:80px; -webkit-box-shadow
 header .logo{ width:auto; float:left; margin:15px 0px 0px 8px; padding:0px;}
 header .logo img{ width:100%; height:auto; display:inline-block;}
 
+header .logo-home{ width:auto; float:left; margin:24px 0px 0px 8px; padding:0px;}
+header .logo-home img{ width:100%; height:auto; display:inline-block;}
+
+
 header nav{ width:auto; float:right; margin:32px 0px 0px 0px; padding:0px;}
 header nav ul{ width:100%; float:left; margin:0px; padding:0px;}
 header nav ul li{ width:auto; float:left; list-style:none; margin:0px; padding:0px;}
 header nav ul li a{font-family: 'Montserrat', sans-serif; font-size:14px; color:#8f8f8f; text-transform:uppercase; text-decoration:none; margin:0px; padding:0px 19px 8px 19px; transition:none;}
-header nav ul li a:hover, header nav ul li a.act{ background:url(../images/menu-divider.png) no-repeat center bottom; color:#00a1ff; padding:0px 16px 8px 16px; transition:none;}
+header nav ul li a:hover, header nav ul li a.act{ background:url(../images/menu-divider.png) no-repeat center bottom; color:#00a1ff; padding:0px 19px 8px 19px; transition:none;}
 
 
 /* Navigation */
 .navigation{ width:auto; float:right; margin:32px 0px 0px 0px; padding:0px;}
-.toggleMenu { display:none; background:#ee2b7b; padding:10px !important; color: #fff; border-radius:6px; position:absolute; right:10px; z-index:99;}
+.toggleMenu { width:34px; height:30px; float:left; margin-top:0px; display:none; background:#5a5a5a; padding:4px 5px; color: #fff; z-index:999;}
+.toggleMenu span{ width:100%; height:2px; float:left; margin:4px 0 0 0; background:#fff; color:#fff;}
 .toggleMenu img{ display:block;}
 .nav { list-style: none; *zoom:1;font-family: 'Montserrat', sans-serif; margin:0px; padding:0px;}
 .nav:before, .nav:after { content:" "; display: table; }
@@ -101,13 +104,14 @@ header nav ul li a:hover, header nav ul li a.act{ background:url(../images/menu-
 section{width:100%; float:left; margin:0px; padding:0px;}
 section h1{width:100%; float:left; background:url(../images/title-divider.png) no-repeat center bottom; font-family: 'Montserrat', sans-serif; font-weight:500; font-size:24px; color:#6e6e6e; text-align:center; text-transform:uppercase; margin:0px; padding:0px 0px 40px 0px;}
 section h1 span{ color:#00a1ff;}
+section h6{width:100%; float:left; font-family: 'Montserrat', sans-serif; font-weight:400; font-size:18px; color:#6e6e6e; text-align:center; text-transform:uppercase; margin:12px 0px 0px 0px; padding:0px;}
 section .welcome-content{ width:100%; float:left; margin:12px 0px 0px 0px; padding:0px;}
 section .welcome-content p{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#8e8e8e; line-height:25px; text-align:center; margin:0px 0px 30px 0px; padding:0px 8px;}
 
 section.ourservie-bg{ background:#f5f5f5; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; padding:50px 0px; margin:60px 0px 0px 0px;}
 section .our-service-box{ width:100%; float:left; margin:30px 0px 0px 0px; padding:0px;}
 section .our-service-box ul{ width:100%; float:left; margin:0px; padding:0px;}
-section .our-service-box ul li{ width:100%; float:left; max-width:222px; list-style:none; background:#fff; border:1px solid #dcdcdc; margin:0px 6px; padding:0px 6px 20px 6px;}
+section .our-service-box ul li{ width:100%; float:left; max-width:222px; max-width:208px\9; list-style:none; background:#fff; border:1px solid #dcdcdc; margin:0px 6px; padding:0px 6px 20px 6px;}
 section .our-service-box ul li .service-icon{ width:100%; float:left; text-align:center; margin:24px 0px 26px 0px; padding:0px;}
 section .our-service-box ul li h3{ width:100%; float:left; background:url(../images/service-title-divider.png) no-repeat center bottom; font-family: 'Montserrat', sans-serif; font-weight:500; font-size:18px; color:#323232; text-align:center; text-transform:uppercase; margin:0px 0px 14px 0px; padding:0px 0px 10px 0px;}
 section .our-service-box ul li p{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#747474; line-height:18px; text-align:center; font-weight:300; margin:0px; padding:0px;}
@@ -143,10 +147,10 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .login-form ul li label{ width:100%; max-width:150px; float:left; font-family: 'Montserrat', sans-serif; font-size:14px; color:#a1a1a1; font-weight:300; line-height:40px; text-align:left; margin:0px; padding:0px;}
 .login-form ul li .form-fild{ width:100%; max-width:370px; float:left; background:#fff; height:40px; line-height:40px; border:1px solid #e1e1e1; border-radius:3px; margin:0px; padding:0px;}
 .login-form ul li .form-fild .fa{ width:44px; float:left; font-size:13px; color:#bdbdbd; line-height:40px; border-right:1px solid #e1e1e1; text-align:center; margin:0px; padding:0px;}
-.login-form ul li .form-fild input[type="text"], .login-form ul li .form-fild input[type="email"], .login-form ul li .form-fild input[type="password"]{ width:84%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; border:none; font-weight:normal; line-height:38px; margin:0px; padding:0px 12px;}
+.login-form ul li .form-fild input[type="email"], .login-form ul li .form-fild input[type="text"], .login-form ul li .form-fild input[type="password"]{ width:84%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; border:none; font-weight:normal; line-height:38px; margin:0px; padding:0px 12px;}
 .login-form ul li .form-fild a.forgot-pass{ display:block; text-align:right; font-family: 'Montserrat', sans-serif; font-size:12px; color:#00a1ff; text-decoration:none; margin:0px; padding:0px;}
 .login-form ul li .form-fild a.forgot-pass:hover{color:#a1a1a1;}
-.login-form ul li input[type="button"], .login-form ul li input[type="submit"]{ width:auto; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; outline:none; border:none; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; cursor:pointer; border-bottom:2px solid #008fe3; margin:20px 0px 0px 0px; padding:0px 24px; font-weight:300;}
+.login-form ul li input[type="button"], .login-form ul li input[type="submit"]{ width:auto; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; outline:none; border:none; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; cursor:pointer; border-bottom:2px solid #008fe3; margin:20px 0px 0px 0px; padding:0px 24px; font-weight:300; appearance:none; -webkit-appearance:none;}
 .login-form ul li input[type="button"]:hover, .login-form ul li input[type="submit"]:hover{ background:#008fe3; border-bottom:2px solid #00a1ff;}
 
 
@@ -162,8 +166,8 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .signup-form ul li label{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:14px; color:#a1a1a1; font-weight:300; line-height:32px; text-align:left; margin:0px; padding:0px;}
 .signup-form ul li .form-fild{ width:100%; float:left; background:#fff; height:40px; line-height:40px; border:1px solid #e1e1e1; border-radius:3px; margin:0px; padding:0px;}
 .signup-form ul li .form-fild .fa{ width:44px; float:left; font-size:13px; color:#bdbdbd; line-height:40px; border-right:1px solid #e1e1e1; text-align:center; margin:0px; padding:0px;}
-.signup-form ul li .form-fild input[type="text"], .signup-form ul li .form-fild input[type="password"]{ width:86%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; border:none; font-weight:normal; line-height:38px; margin:0px; padding:0px 12px;}
-.signup-form ul li input[type="button"]{ width:auto; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; outline:none; border:none; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; cursor:pointer; border-bottom:2px solid #008fe3; margin:10px 0px 0px 0px; padding:0px 24px; font-weight:300;}
+.signup-form ul li .form-fild input[type="email"], .signup-form ul li .form-fild input[type="text"], .signup-form ul li .form-fild input[type="password"]{ width:86%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; border:none; font-weight:normal; line-height:38px; margin:0px; padding:0px 12px;}
+.signup-form ul li input[type="button"]{ width:auto; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; outline:none; border:none; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; cursor:pointer; border-bottom:2px solid #008fe3; margin:10px 0px 0px 0px; padding:0px 24px; font-weight:300; appearance:none; -webkit-appearance:none;}
 .signup-form ul li input[type="button"]:hover{ background:#008fe3; border-bottom:2px solid #00a1ff;}
 .signup-form ul li button img{ display:inline-block; padding-left:4px;}
 
@@ -183,12 +187,13 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .profile-form ul li .name-fild{ width:84%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none;  line-height:38px; border:none; outline:none; font-weight:normal; margin:0px; padding:0px 12px;}
 .profile-form ul li select{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; height:38px; line-height:38px; border:none; font-weight:normal; margin:0px; padding:0px 12px; outline:none;}
 .profile-form ul li textarea{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#bdbdbd; outline:none; background:#fff; height:40px; line-height:40px; border:1px solid #e1e1e1; border-radius:3px; height:90px; line-height:20px; outline:none; border-radius:3px; font-weight:normal; margin:0px; padding:6px 12px; resize:none;}
-.profile-form ul li input[type="button"]{display:inline-block; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; letter-spacing:0.5px; cursor:pointer; text-transform:uppercase; border-bottom:2px solid #008fe3 !important; margin:10px 0px 0px 0px; padding:0px 28px; font-weight:300; outline:none; border:none;}
+.profile-form ul li input[type="button"]{display:inline-block; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; letter-spacing:0.5px; cursor:pointer; text-transform:uppercase; border-bottom:2px solid #008fe3 !important; margin:10px 0px 0px 0px; padding:0px 28px; font-weight:300; outline:none; border:none; appearance:none; -webkit-appearance:none;}
 .profile-form ul li input[type="button"]:hover{background:#008fe3; border-bottom:2px solid #00a1ff;}
 
 .profile-form ul li a.next-link{display:inline-block; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; letter-spacing:0.5px; cursor:pointer; text-transform:uppercase; border-bottom:2px solid #008fe3; margin:10px 0px 0px 0px; padding:0px 44px; font-weight:300;}
 .profile-form ul li a.next-link:hover{background:#008fe3; border-bottom:2px solid #00a1ff;}
 .profile-form ul li .multipal-select{ width:100%; float:left; margin:0px; padding:0px; position:relative;}
+.profile-form ul li .skills-select{ width:100%; float:left; margin:0px; padding:0px; position:relative;}
 
 
 
@@ -216,8 +221,8 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .views-list ul li .view-user{ width:60px; float:left; margin:0px; padding:0px;}
 .views-list ul li .view-user img{ width:100; height:auto; display:block; border-radius:5px;}
 .views-list ul li .user-bio{ width:86%; float:left; margin:0px 0px 0px 18px; padding:0px;}
-.views-list ul li .user-bio h3{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:15px; color:#6e6e6e; text-transform:uppercase; font-weight:500; margin:0px; padding:0px 0px 3px 0px;}
-.views-list ul li .user-bio h6{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#929292; font-weight:400; line-height:18px; margin:0px; padding:0px;}
+.views-list ul li .user-bio h3{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:15px; color:#00a1ff; text-transform:uppercase; font-weight:500; margin:0px; padding:0px 0px 3px 0px;}
+.views-list ul li .user-bio h6{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:13px; color:#929292; font-weight:400; line-height:18px; text-align:left; margin:0px; padding:0px;}
 .views-list ul li .user-bio h6 span{ display:block;}
 .views-list ul li .user-clock{ width:7%; float:right; text-align:center; font-family: 'Montserrat', sans-serif; font-size:13px; color:#929292; font-weight:300; margin:0px; padding:0px;}
 .views-list ul li .user-clock span{ display:block; padding-top:2px;}
@@ -228,7 +233,7 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .members-main .members-table ul{width:100%; float:left; display:table-cell; text-align:center; vertical-align:middle; margin:0px; padding:0px;}
 .members-main .members-table ul li{width:auto; float:none; list-style:none; display:inline-block;  margin:0px 10px; padding:0px;}
 .members-main .members-table ul li a{ display:inline-block; background:#e7e6e6; border-radius:4px; height:32px; line-height:32px; font-family: 'Montserrat', sans-serif; font-size:14px; color:#6e6e6e; text-transform:uppercase; text-decoration:none; margin:0px; padding:0px 16px;}
-.members-main .members-table ul li a:hover{ background:#00a1ff; color:#fff;}
+.members-main .members-table ul li a:hover, .members-main .members-table ul li a.active{ background:#00a1ff; color:#fff;}
 .members-main .member-list{ width:100%; float:left; margin:30px 0px 0px 0px; padding:0px;}
 .members-main .member-list ul{ width:100%; float:left; margin:0px; padding:0px;}
 .members-main .member-list ul li{ width:100%; max-width:222px; float:left; list-style:none; margin:0px 6px 18px 6px; padding:0px;}
@@ -271,14 +276,33 @@ footer .copyright a:hover{ color:#d7d6d6;}
 }
 
 .chat-main .chat-bottom{ width:100%; position:absolute; left:0px; right:0px; bottom:0px; background:#f2f2f2; height:60px; border-top:1px solid #ebebeb; border-radius:0px 0px 6px 6px; margin:0px; padding:10px;}
-.chat-main .chat-bottom input[type="text"]{width:82%; float:left; height:38px; border-style:solid; border-width:0 0 1px; border-color:#000 #000 #e3e3e3; border-radius:0; font-size:12px; padding:0px 12px;}
-.chat-main .chat-bottom input[type="submit"]{width:18%; float:right; padding:9px 0 9px 7px; background-color:transparent; color:#00a1ff; font-size:12px; outline:none; cursor:pointer; border:none;}
+.chat-main .chat-bottom input[type="text"]{width:82%; float:left; height:38px; border-style:solid; border-width:0 0 1px; border-color:#000 #000 #e3e3e3; border-radius:0; font-size:12px; padding:0px 12px; }
+.chat-main .chat-bottom input[type="submit"]{width:18%; float:right; padding:9px 0 9px 7px; background-color:transparent; color:#00a1ff; font-size:12px; outline:none; cursor:pointer; border:none; appearance:none; -webkit-appearance:none;}
 
 
+/* Profile Page */
+.profile-page{ width:100%; max-width:800px; margin:0px auto; padding:0px;}
+.profile-page .profile-main{ width:100%; float:left; border:1px solid #ccc; border-radius:6px; margin:30px 0px 0px 0px; padding:20px;}
+.profile-page .profile-member{ width:222px; float:left; margin:0px; padding:0px;}
+.profile-page .profile-member img{ width:100%; height:auto; display:block; border-radius:6px;}
+.profile-page .member-detail{ width:100%; max-width:500px; float:left; margin:30px 0px 0px 30px; padding:0px;}
+.profile-page .member-detail h3{width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:18px; color:#393939; font-weight:500; text-transform:uppercase; margin:0px 0px 4px 0px; padding:0px;}
+.profile-page .member-detail .member-profession{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:15px; color:#929292; font-weight:400; line-height:24px; margin:0px; padding:0px;}
+.profile-page .member-detail .member-profession span{ display:block;}
+.profile-page .member-about{ width:100%; float:left; margin:30px 0px 0px 0px; padding:0px;}
+.profile-page .member-about h5{width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:16px; color:#393939; font-weight:500; text-transform:uppercase; margin:0px 0px 4px 0px; padding:0px;}
+.profile-page .member-about p{width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:14px; color:#929292; font-weight:400; line-height:20px; text-align:left; margin:0px; padding:0px;}
 
+.profile-page .member-other-information{ width:100%; float:left; margin:20px 0px 0px 0px; padding:0px;}
+.profile-page .member-other-information h5{ width:100%; float:left; font-family: 'Montserrat', sans-serif; font-size:16px; color:#393939; font-weight:500; text-transform:uppercase; margin:0px 0px 4px 0px; padding:0px;}
+.profile-page .member-other-information .information-member{ width:100%; float:left; margin:5px 0px 14px 0px; padding:0px;}
+.profile-page .member-other-information .information-member ul{ width:100%; float:left; margin:0px; padding:0px;}
+.profile-page .member-other-information .information-member ul li{ width:100%; max-width:177px; float:left; list-style:none; margin:0px 6px 6px 6px; padding:0px;}
+.profile-page .member-other-information .information-member ul li a{ width:100%; float:left; border:1px solid #ccc; border-radius:6px; font-family: 'Montserrat', sans-serif; font-size:14px; font-weight:400; color:#393939; height:32px; line-height:32px; text-decoration:none; text-align:center; margin:0px; padding:0px;}
+.profile-page .member-other-information .information-member ul li a:hover{ border:1px solid #00a1ff;}
+.profile-page .member-other-information .information-member ul li a.blue-bg{display:inline-block; border:1px solid #00a1ff;}
 
-
-
-
-
+.profile-page .bottom-button{ width:100%; float:left; display:table-cell; text-align:center; vertical-align:middle; margin:0px; padding:0px;}
+.profile-page .bottom-button input[type="submit"]{ display:inline-block; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; letter-spacing:0.5px; cursor:pointer; text-transform:uppercase; border-bottom:2px solid #008fe3 !important; margin:10px 5px 0px 5px; padding:0px 28px; font-weight:300; outline:none; border:none; appearance:none; -webkit-appearance:none;}
+.profile-page .bottom-button input[type="submit"]:hover{background:#008fe3; border-bottom:2px solid #00a1ff;}
 

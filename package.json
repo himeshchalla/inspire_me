@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "vue-form-wizard": "^0.6.6"
+    "vue-form-wizard": "^0.7.0"
   }
 }
