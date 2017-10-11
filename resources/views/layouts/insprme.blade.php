@@ -13,7 +13,9 @@
     <title>{{ config('app.name', 'InsprMe') }} :: @yield('title')</title>
     <!------ Globle css --------------->
     <link href="{{ asset('css/globle.css') }}" rel="stylesheet" type="text/css">
+    <!------ Responsive css --------------->
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
+    <!------ vue-form-wizard css --------------->
     <link href="{{ asset('css/vue-form-wizard.min.css') }}" rel="stylesheet" type="text/css">
     <!------ Fonts css --------------->
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet" type="text/css">

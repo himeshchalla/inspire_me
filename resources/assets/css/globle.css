@@ -306,3 +306,4 @@ footer .copyright a:hover{ color:#d7d6d6;}
 .profile-page .bottom-button input[type="submit"]{ display:inline-block; background:#00a1ff; border-radius:30px; line-height:38px; line-height:38px; font-family: 'Montserrat', sans-serif; font-size:15px; color:#fff; text-transform:uppercase; letter-spacing:0.5px; cursor:pointer; text-transform:uppercase; border-bottom:2px solid #008fe3 !important; margin:10px 5px 0px 5px; padding:0px 28px; font-weight:300; outline:none; border:none; appearance:none; -webkit-appearance:none;}
 .profile-page .bottom-button input[type="submit"]:hover{background:#008fe3; border-bottom:2px solid #00a1ff;}
 
+.vue-form-wizard .wizard-navigation {float:left !important;}
