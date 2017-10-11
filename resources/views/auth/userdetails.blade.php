@@ -1,5 +1,5 @@
 <section>
-	<div class="container">        
+	<div class="container">
         <div class="coman-inner">
         	<h1>Sign Up</h1>
             <div class="signup-center">
