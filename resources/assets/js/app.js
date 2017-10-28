@@ -20,6 +20,8 @@ Vue.component('register', require('./components/Register.vue'));
 Vue.component('register2', require('./components/Register2.vue'));
 Vue.component('register3', require('./components/Register3.vue'));
 Vue.component('register4', require('./components/Register4.vue'));
+Vue.component('registerelementuiintegration', require('./components/RegisterElementUIintegration.vue'));
+Vue.component('asyncvalidation', require('./components/AsyncValidation.vue'));
 
 //const app = new Vue({
 //    el: '#sitemain'
@@ -32,10 +34,22 @@ window.onload = function () {
         data: {
         	message: 'home'
         },
+        mounted() {
+            console.log('Component mounted.')
+        },
         methods: {
             onComplete: function(){
             alert('Yay. Done!');
-         }
+         },
+            changetab: function(prevIndex, nextIndex){
+             alert('Tab changed called!');
+             alert("prevIndex:"+(prevIndex));
+             alert("nextIndex:"+(nextIndex));
+//             console.log(this.$emit('prevTab'));
+//             this.$emit('prevTab');
+             console.log(this.props);
+             //this.$emit('on-change', activeTabIndex-1, activeTabIndex+1);
+          }
         },
     });
 }

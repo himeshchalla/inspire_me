@@ -7,7 +7,14 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "flush-cache": "php artisan cache:clear && php artisan config:clear && php artisan view:clear",
+    "refresh": "npm run flush-cache && npm run dev",
+    "refresh-watch": "npm run flush-cache && npm run watch-poll",
+    "pull-development": "git pull origin development",
+    "pull-stage": "git pull origin stage",
+    "build-development": "git pull origin development && php artisan migrate:refresh --seed -vvv && npm run flush-cache && npm run dev",
+   	"build-stage": "git pull origin stage && php artisan migrate:refresh --seed -vvv && npm run flush-cache && npm run prod"
   },
   "devDependencies": {
     "axios": "^0.16.2",
@@ -20,6 +27,6 @@
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "vue-form-wizard": "^0.6.6"
+    "vue-form-wizard": "^0.7.0"
   }
 }

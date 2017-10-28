@@ -321,6 +321,22 @@ a.ui-button:active,
 	font-weight:300 !important;
 	
 }
+
+.profile-form ul li .skills-select .ui-state-active,
+.profile-form ul li .skills-select .ui-widget-content .ui-state-active,
+.profile-form ul li .skills-select .ui-widget-header .ui-state-active,
+.profile-form ul li .skills-select a.ui-button:active,
+.profile-form ul li .skills-select .ui-button:active,
+.profile-form ul li .skills-select .ui-button.ui-state-active:hover {
+	border: 1px solid #0065a0 !important;
+	background: #0086d4;
+	font-weight: normal;
+	color: #ffffff !important;	
+	font-weight:300 !important;
+	
+}
+
+
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
 	border: #003eff;
@@ -341,6 +357,7 @@ a.ui-button:active,
 .ui-icon {
 	width: 16px;
 	height: 16px;
+	display:none;
 }
 .ui-icon,
 .ui-widget-content .ui-icon {	
